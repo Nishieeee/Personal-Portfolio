@@ -1,0 +1,107 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif, serif;
+}
+
+:root {
+    --primary-color: #d4d8dd;
+    --secondary-color: #c0cc8ca;
+    --tertiary-color: #aab7b7;
+    --fourth-color: #2e4256;
+    --fifth-color: #1a2d42;
+    --font-size: 1rem;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.header {
+    height: 40px;
+    background: var(--fifth-color);
+    padding: 15px 10px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    border: solid 1px black;
+}
+.header > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+.header a:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+#current_page {
+    border-bottom: 1px solid var(--primary-color);
+}
+.personal_info {
+    padding: 50px 70px;
+    display: flex;
+    height: 500px;
+    align-content: space-between;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.section1 {
+    padding: 1rem 1.5rem;
+    color: var(--primary-color);
+    background: var(--fourth-color);
+    height: 100%;
+    max-height: 1000px;
+    min-height: 400px;
+    width: 100%;
+    max-width: 350px;
+    min-width: 200px;
+}
+#profile_pic {
+    height: 100%;
+    max-height: 350px;
+    min-height: 50px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+    margin-bottom: 5%;
+}
+.links > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
+.links a:hover {
+    border-bottom: 1px solid var(--primary-color); 
+}
+.links {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-top: 6%; 
+}
+.section2 {
+    padding: 1rem 1.5rem;
+    background: var(--fourth-color);
+    color: var(--primary-color);
+    margin-top: 25px;
+    height: 450px;
+    width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    border-left: 0.1px solid black;
+    overflow-y: auto;
+}
+.about_me > p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+.Services {
+    margin-top: 1.5rem; 
+}
+.specialty {
+    margin-top: 1rem;
+}
+.specialty > p {
+    font-size: 1rem;
+}
